@@ -15,6 +15,7 @@ const displayIntro = () => {
 	const showNext = (text) => {
 		return new Promise((resolve, reject) => {
 		setTimeout(() => {
+			currentIntroText.classList.remove('loading');
 			currentIntroText.innerHTML = "";
 			type(0,100,text)
 			resolve();

@@ -23,10 +23,17 @@ const displayIntro = () => {
 
 		})
 	}
+	
+	const displayPage = () => {
+		setTimeout(() => {
+			window.location.href="home.html";
+		}, 4000)
+	}
 
 
 	showNext(introTexts[0])
 		.then(() => showNext(introTexts[1]))
+		.then(() => displayPage())
 }
 
 displayIntro()

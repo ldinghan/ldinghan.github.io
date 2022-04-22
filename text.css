@@ -1,0 +1,17 @@
+.header_text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30vh;
+	background: #aaaaaa;
+	border: 3px solid #bbbbbb;
+}
+section p {
+	min-width: 30vw;
+}

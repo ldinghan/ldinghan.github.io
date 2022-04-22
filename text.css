@@ -1,17 +1,53 @@
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30vh;
+	background: #bbbbbb;
+	border: 3px solid #cccccc;
+}
+section p {
+	min-width: 30vw;
+}
+
 .header_text {
 	text-align: center;
 	font-weight: bold;
 	font-size: 3em;
 }
 
-section {
+.subtext {
+	min-height: 20vh;
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 30vh;
-	background: #aaaaaa;
-	border: 3px solid #bbbbbb;
+	margin-right: 3vw;
+	background: #dddddd;
 }
-section p {
-	min-width: 30vw;
+
+
+#iconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact_link {
+	margin: auto;
+	min-width: 10vw;
+	min-height: 10vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: whitesmoke;
+	border-radius: 5px;
+	border: 1px solid #242526;
+	font-family: "EB Garamond";
+	font-weight: 600;
+}
+
+.contact_link:hover {
+	transform: scale(1.03);
 }

@@ -71,7 +71,7 @@ body {
 }
 
 .loading {
-	animation: load 3.99s linear;
+	animation: load 3s linear;
 }
 
 @keyframes load {
@@ -82,7 +82,7 @@ body {
 }
 
 .transition {
-	animation: transit 4s linear;
+	animation: transit 3s linear;
 }
 
 @keyframes transit {

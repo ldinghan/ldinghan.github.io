@@ -19,30 +19,32 @@ const displayIntro = () => {
 			currentIntroText.innerHTML = "";
 			type(0,100,text)
 			resolve();
-		}, 4000)
+		}, 3000)
 
 		})
 	}
-	
+
 	const transitionPage = () => {
 		setTimeout(() => {
 			currentIntroText.innerHTML = "";
 			currentIntroText.classList.add('transition');
-			displayPage()		
-		}, 4000)
+			displayPage()			
+		}, 3000)
 
 	}
-	
+
 	const displayPage = () => {
 		setTimeout(() => {
 			window.location.href="home.html";
-		}, 2000)
+		}, 1100)
 	}
 
 
 	showNext(introTexts[0])
 		.then(() => showNext(introTexts[1]))
 		.then(() => transitionPage())
+
+
 }
 
 displayIntro()

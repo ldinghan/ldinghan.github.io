@@ -24,16 +24,25 @@ const displayIntro = () => {
 		})
 	}
 	
+	const transitionPage = () => {
+		setTimeout(() => {
+			currentIntroText.innerHTML = "";
+			currentIntroText.classList.add('transition');
+			displayPage()		
+		}, 4000)
+
+	}
+	
 	const displayPage = () => {
 		setTimeout(() => {
 			window.location.href="home.html";
-		}, 4000)
+		}, 2000)
 	}
 
 
 	showNext(introTexts[0])
 		.then(() => showNext(introTexts[1]))
-		.then(() => displayPage())
+		.then(() => transitionPage())
 }
 
 displayIntro()

@@ -50,7 +50,7 @@ table {
 
 body {
 	background: #f9f9f9;
-	margin-top: 10vh;
+	padding-top: 10vh;
 }
 
 nav {
@@ -80,8 +80,34 @@ nav ul li {
 	padding: 10px;
 	min-width: 10vw;
 	text-align: center;
+	font-family: 'EB Garamond';
 }
-nav ul li:hover {
+nav ul li:hover{
 	transform: scale(1.03);
 	background: #5e646e;
+}
+
+#currentPage {
+	background: #5e646e;
+}
+
+
+#panToTop {
+	position: fixed;
+	right: 5vw;
+	bottom: 5vh;
+	background: #242526;
+	padding: 5px;
+	min-width: 20px;
+	min-height: 20px;
+	border: 2px solid #777777;
+}
+
+#panToTop:hover {
+	border: 3px solid #777777;
+}
+
+#panToTop a {
+	text-decoration: none;
+	color: white;
 }

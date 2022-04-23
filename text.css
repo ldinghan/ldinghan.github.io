@@ -25,29 +25,3 @@ section p {
 	margin-right: 3vw;
 	background: #dddddd;
 }
-
-
-#iconContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.contact_link {
-	margin: auto;
-	min-width: 10vw;
-	min-height: 10vh;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: whitesmoke;
-	border-radius: 5px;
-	border: 1px solid #242526;
-	font-family: "EB Garamond";
-	font-weight: 600;
-}
-
-.contact_link:hover {
-	transform: scale(1.03);
-}

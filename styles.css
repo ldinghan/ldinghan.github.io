@@ -68,6 +68,7 @@ body {
 	transform: translateY(-50%);
 	border-radius: 20px;
 	background: white;
+	font-family: 'EB Garamond';
 }
 
 .loading {
@@ -82,7 +83,7 @@ body {
 }
 
 .transition {
-	animation: transit 3s linear;
+	animation: transit 4s linear;
 }
 
 @keyframes transit {

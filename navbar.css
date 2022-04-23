@@ -48,6 +48,12 @@ table {
 }
 
 
+
+html {
+	scroll-behavior: smooth;
+}
+
+
 body {
 	background: #f9f9f9;
 	padding-top: 10vh;
@@ -93,6 +99,7 @@ nav ul li:hover{
 
 
 #panToTop {
+	display: none;
 	position: fixed;
 	right: 5vw;
 	bottom: 5vh;
@@ -110,4 +117,17 @@ nav ul li:hover{
 #panToTop a {
 	text-decoration: none;
 	color: white;
+}
+
+footer {
+	min-height: 12vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "EB Garamond";
+	background: #242526;
+}
+
+footer p {
+	color: #f9f9f9;
 }

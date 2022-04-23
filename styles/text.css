@@ -4,7 +4,11 @@ section {
 	align-items: center;
 	min-height: 30vh;
 	background: #bbbbbb;
-	border: 3px solid #cccccc;
+	/*border: 2px solid #cccccc;*/
+	outline: 3px solid #cccccc;
+	outline-offset: -2px;
+	width: 100vw;
+
 }
 section p {
 	min-width: 30vw;
@@ -13,7 +17,8 @@ section p {
 .header_text {
 	text-align: center;
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 2.5em;
+	min-width: 250px;
 }
 
 .subtext {
@@ -24,4 +29,39 @@ section p {
 	align-items: center;
 	margin-right: 3vw;
 	background: #dddddd;
+}
+
+.subtext_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3vh;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+.background_image {
+	width: 72vw;
+	height: 78vh;
+	min-width: 441px;
+	max-width: 838px;
+	filter: brightness(0.4);
+}
+
+#intro_text {
+	position: fixed;
+	top: 40vh;
+	font-family: "EB Garamond";
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	width: 35vw;
+	max-width: 419px;
+	color: white;
+	background: rgba(170, 170, 170, 0.5);
+	border-radius: 5px;
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

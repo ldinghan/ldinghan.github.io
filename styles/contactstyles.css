@@ -25,6 +25,7 @@
 	min-height: 30vh;
 	width: 330px;
 	border: 1px solid black;
+	border-radius: 5px;
 	padding-bottom: 2vh;
 	margin-bottom: 5vh;
 }

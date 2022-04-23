@@ -35,7 +35,7 @@ const displayIntro = () => {
 
 	const displayPage = () => {
 		setTimeout(() => {
-			window.location.href="home.html";
+			window.location.href="pages/home.html";
 		}, 1100)
 	}
 

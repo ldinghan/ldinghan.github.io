@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ding Han's Personal Website</title>
 	<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-	<link rel="stylesheet" href="navbar.css">
-	<link rel="stylesheet" href="text.css">
+	<link rel="stylesheet" href="../styles/navbar.css">
+	<link rel="stylesheet" href="../styles/text.css">
+	<link rel="stylesheet" href="../styles/contactstyles.css">
 	
 </head>
 <body>
@@ -23,9 +24,31 @@
 	</div>
 
 	<section id="iconContainer">
-		<div class="contact_link"><a href="https://www.linkedin.com/in/dinghanlim/">LinkedIn</a></div>
-		<div class="contact_link"><a href="https://github.com/ldinghan">GitHub</a></div>
+
+		<a href="https://www.linkedin.com/in/dinghanlim/" target="_blank"><img src="../icons/linkedin_logo.png" class="contact_link" alt="Link to LinkedIn"></a>
+
+		<a href="https://github.com/ldinghan" target="_blank"><img src="../icons/github_logo.png" class="contact_link" alt="Link to GitHub"></a>
 	</section>
+	<div id="formContainer">
+		<p id="contactFormText">Feel free to contact me through this form!</p>
+		<form action="https://formspree.io/f/moqrpanw" method="POST" id="contactForm">
+				<label>Your email:
+				<input type="email" name="email" class="input_field" placeholder="Your email" required>
+				</label>
+				<label>Your message:
+				<textarea name="message" class="input_field" placeholder="Type your message here" required></textarea>
+				</label>
+				<button type="submit" id="submitFormBtn">Send</button>
+		</form>
+	</div>
+
+
+
+	<footer>
+		<p id="footerText">Made by Lim Ding Han 2022</p>
+	</footer>
+
+	<script src="../scripts/pageFunctions.js"></script>
 
 
 

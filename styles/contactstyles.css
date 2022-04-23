@@ -1,0 +1,56 @@
+#iconContainer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.contact_link:hover {
+	transform: scale(1.03);
+}
+
+#formContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#contactForm {
+	display: flex;
+	padding-top: 5vh;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	min-height: 30vh;
+	width: 330px;
+	border: 1px solid black;
+	padding-bottom: 2vh;
+	margin-bottom: 5vh;
+}
+
+form label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "EB Garamond";
+	font-weight: bold;
+}
+
+.input_field {
+	margin: 5px;
+	font-family: "EB Garamond";
+	font-size: 1rem;
+}
+
+
+textarea {
+	min-height: 10vh;
+}
+
+#contactFormText {
+	font-family: "EB Garamond";
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 2vh;
+}

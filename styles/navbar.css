@@ -134,7 +134,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	font-family: "EB Garamond";
-	background: #242526;
+	background: #353535;
 	width: 100vw;
 }
 
@@ -146,4 +146,25 @@ footer p {
 
 #popScoreDisplay {
 	display: none;
+}
+
+
+
+#nextPageBtn {
+	font-family: "EB Garamond";
+	border-radius: 1rem;
+	font-weight: bold;
+	font-size: 6vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 6vw;
+	height: 12vh;
+	position: fixed;
+	right: 1vw;
+	top: 44vh;
+	background: rgba(225,225,225,0.3);
+	color: rgba(195,195,195,0.8);
+	cursor: pointer;
+	border: 1px solid lightgrey;
 }

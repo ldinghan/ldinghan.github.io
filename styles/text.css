@@ -3,9 +3,8 @@ section {
 	justify-content: center;
 	align-items: center;
 	min-height: 30vh;
-	background: #bbbbbb;
-	/*border: 2px solid #cccccc;*/
-	outline: 3px solid #cccccc;
+	background: lightgoldenrodyellow;
+	outline: 1.5px solid lightblue;
 	outline-offset: -2px;
 	width: 100vw;
 
@@ -28,7 +27,9 @@ section p {
 	justify-content: center;
 	align-items: center;
 	margin-right: 3vw;
-	background: #dddddd;
+	background: lightyellow;
+	border: 1.5px solid #cccc00;
+	border-radius: 5px;
 }
 
 .subtext_container {

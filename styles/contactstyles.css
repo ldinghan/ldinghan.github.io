@@ -24,10 +24,11 @@
 	flex-direction: column;
 	min-height: 30vh;
 	width: 330px;
-	border: 1px solid black;
+	border: 1.5px solid #cccc00;
 	border-radius: 5px;
 	padding-bottom: 2vh;
 	margin-bottom: 5vh;
+	background: lightgoldenrodyellow;
 }
 
 form label {

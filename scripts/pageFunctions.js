@@ -1,5 +1,7 @@
 const panButton = document.querySelector("#panToTop");
 const popScoreDisplay = document.querySelector("#popScoreDisplay");
+const currentPage = document.querySelector("#currentPage");
+
 
 let scrollScore = 0;
 let popScore = 0;
@@ -24,6 +26,12 @@ window.onload = () => {
 	setInterval(() => {
 		bubbleSpawn()
 	}, 10000)
+
+	if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+        setTimeout(() => {
+        	nextPageBtn.style.display = "flex";
+        }, 4000)
+    }
 }
 
 
@@ -33,6 +41,10 @@ const scrollFunction = () => {
 	} else {
 		panButton.style.display = "none";
 	}
+
+    if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+        nextPageBtn.style.display = "flex";
+    }
 }
 
 
@@ -52,7 +64,7 @@ const bubbleSpawn = () => {
 		popBubble(newBubble)
 		if (popped === false) {
 			popped = true;
-			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will be lost once you close your browser)')
+			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will be lost once you close this browser)')
 			popScoreDisplay.style.display = 'block';
 			popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`			
 		}
@@ -66,3 +78,22 @@ const popBubble = (bubble) => {
 	popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
 	sessionStorage.setItem('popScore', popScore);
 }
+
+
+
+
+const nextPageFunction = () => {
+	window.location.href = currentPage.nextElementSibling.childNodes[0].getAttribute("href");
+}
+
+if (currentPage.textContent !== "CONTACT") {
+	const nextPageBtn = document.createElement("div");
+	nextPageBtn.setAttribute("id", "nextPageBtn");
+
+	nextPageBtn.innerText = ">"; 
+
+	nextPageBtn.onclick = nextPageFunction;
+
+	document.body.appendChild(nextPageBtn)
+}
+

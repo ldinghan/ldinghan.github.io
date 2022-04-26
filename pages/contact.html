@@ -33,11 +33,14 @@
 	<div id="formContainer">
 		<p id="contactFormText">Feel free to contact me through this form!</p>
 		<form action="https://formspree.io/f/moqrpanw" method="POST" id="contactForm">
+				<label>Your name:
+					<input type="text" name="name" class="input_field" placeholder="Your name" required>
+				</label>
 				<label>Your email:
-				<input type="email" name="email" class="input_field" placeholder="Your email" required>
+					<input type="email" name="email" class="input_field" placeholder="Your email" required>
 				</label>
 				<label>Your message:
-				<textarea name="message" class="input_field" placeholder="Type your message here" required></textarea>
+					<textarea name="message" class="input_field" placeholder="Type your message here" required></textarea>
 				</label>
 				<button type="submit" id="submitFormBtn">Send</button>
 		</form>

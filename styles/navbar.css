@@ -167,4 +167,5 @@ footer p {
 	color: rgba(195,195,195,0.8);
 	cursor: pointer;
 	border: 1px solid lightgrey;
+	min-width: 70px;
 }

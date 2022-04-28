@@ -64,7 +64,7 @@ const bubbleSpawn = () => {
 		popBubble(newBubble)
 		if (popped === false) {
 			popped = true;
-			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will be lost once you close this browser)')
+			alert('Keep exploring to pop more bubbles! More bubbles will appear as you explore the page! (Your progress will be lost once you close this browser)')
 			popScoreDisplay.style.display = 'block';
 			popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`			
 		}

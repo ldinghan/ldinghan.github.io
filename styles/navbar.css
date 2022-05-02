@@ -166,6 +166,29 @@ footer p {
 	background: rgba(225,225,225,0.3);
 	color: rgba(195,195,195,0.8);
 	cursor: pointer;
-	border: 1px solid lightgrey;
+	border: 1px solid lightgrey; 
 	min-width: 70px;
+	user-select: none;
+}
+
+#nextPageBtn:hover {
+	background: lightgrey;
+}
+
+#nextPageBtn:active {
+	background: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	#popScoreDisplay {
+		font-size: 0.8em;
+	}
+
+	nav ul li {
+		min-width: 8vw;
+		padding: 2px;
+		font-size: 0.8em;
+	}
 }

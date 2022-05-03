@@ -2,7 +2,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 30vh;
+	min-height: 20vh;
 	background: lightgoldenrodyellow;
 	outline: 1.5px solid lightblue;
 	outline-offset: -2px;
@@ -30,11 +30,13 @@ section p {
 	justify-content: center;
 	justify-self: flex-start;
 	align-content: center;
-	margin-right: 3vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
 	background: lightyellow;
 	border: 1.5px solid #cccc00;
 	border-radius: 5px;
 	min-width: 65vw;
+	max-width: 80vw;
 	font-family: "EB Garamond";
 	font-size: 1.2em;
 	text-align: left;
@@ -76,7 +78,54 @@ section p {
 	align-items: center;
 }
 
+#altIntroductionSubtext {
+	display: none;
+}
 
+.posts_title_top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1vh;
+}
+
+
+
+#recentProjectsList {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-start;
+	align-content: center;
+	list-style-type: circle;
+	text-align: left;
+	padding-left: 0.5em;
+}
+
+#projects_section {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+.posts_section {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.posts_section:last-of-type {
+	margin-bottom: 10vh;
+}
+
+
+
+.posts_image {
+	width: 100%;
+	height: 80%;
+}
+
+
+/* FOR MOBILE VERSION */
 @media only screen and (max-width: 840px) {
 	.header_text {
 		min-width: 35vw;
@@ -85,6 +134,11 @@ section p {
 	.subtext {
 		min-width: 55vw;
 		font-size: 0.8em;
+		margin-right: 8vw;
+	}
+
+	.posts_title_top > .subtext {
+		margin-right: 2vw;
 	}
 
 	#first_section {
@@ -103,17 +157,12 @@ section p {
 	#faceImage {
 		padding-top: 10px;
 	}
+
+	#mainIntroductionSubtext {
+		display: none;
+	}
+
+	#altIntroductionSubtext {
+		display: block;
+	}
 }
-
-
-#recentProjectsList {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-self: flex-start;
-	align-content: center;
-	list-style-type: circle;
-	text-align: left;
-	padding-left: 0.5em;
-}
-

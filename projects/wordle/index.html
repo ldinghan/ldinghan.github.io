@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Wordle Clone</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="keyboard-container">
+		<div class="keyboard" id='firstKeyboard'>QWERTYUIOP</div>
+		<div class="keyboard" id='secondKeyboard'>ASDFGHJKL</div>
+		<div class="keyboard" id='thirdKeyboard'>ZXCVBNM</div>
+	</div>
+	<div class="score-container"><p id='currentScore'>Current streak: 0</p></div>
+	<div class="expand">Expand your window to view keyboard and current streak!</div>
+
+	<div class="input-container">
+	<div id="printedText"><span></span><span></span><span></span><span></span><span></span></div>
+	<input type="text" id="currentInput" maxlength="5" placeholder="guess here" autofocus>
+</div>
+<div class="guesses-container">
+	<p class="guess-row"></p>
+	<p class="guess-row"></p>
+	<p class="guess-row"></p>
+	<p class="guess-row"></p>
+	<p class="guess-row"></p>
+</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

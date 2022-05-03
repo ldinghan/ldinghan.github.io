@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/********************************************************************/
+h1 {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+}
+#printedText {
+	display: flex;
+	margin: 50px;
+}
+#currentInput {
+	width: 35%;
+
+}
+.input-container {
+  width: 100vw;
+  position: relative;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.guessed {
+	background: red;
+}
+.wrong {
+	background: grey;
+}
+.correct-letter {
+	background: yellow;
+}
+.correct-placing {
+	background: green;
+}
+
+
+span {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+	min-height: 50px;
+	min-width: 50px;
+	border: 1px solid black;
+	margin: 5px;
+}
+.guesses-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 50vh;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.guess-row {
+	display: flex;
+	height: 50px;
+	width: 300px;
+
+}
+
+.keyboard-container {
+	position: fixed;
+	right: 10px;
+	top: 100px;
+	height: 100px;
+	width: 20%;
+	border: 2px solid black;
+}
+
+.keyboard {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+}
+
+.score-container {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	height: 60px;
+	width: 20%;
+
+}
+
+#currentScore {
+	font-size: 30px;
+	border: None;
+	font-weight: bold;
+}
+
+.expand {
+	border: 1px solid darkgrey;
+	border-radius: 10%;
+	background-color: lightgrey;
+	color: black;
+	position: fixed;
+	right: 10px;
+	width: 15%;
+	top: 40%
+}
+
+@media only screen and (min-width: 619px) {
+	.expand {
+		display: none;
+	}
+}
+@media only screen and (max-width: 619px) {
+	.keyboard-container, #currentScore {
+		display: none;
+	}
+}

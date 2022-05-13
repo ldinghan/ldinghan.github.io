@@ -97,14 +97,16 @@ body {
 }
 
 #gameCanvas {
-	width: 70vw;
-	height: 70vh;
-	max-width: 70vh;
-	max-height: 70vw;
+	width: 500px;
+	height: 500px;
 }
 
-@media only screen and (max-height: 260px) {
+@media only screen and (max-width: 600px) {
 	#startGameBtn {
 		font-size: 1.5rem;
+	}
+	#gameCanvas {
+		width: 250px;
+		height: 250px;
 	}
 }

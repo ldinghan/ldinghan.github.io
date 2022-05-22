@@ -17,8 +17,8 @@ window.onscroll = () => {
 }
 
 window.onload = () => {
-	if (sessionStorage.getItem('popScore') !== null) {
-		popScore = sessionStorage.getItem('popScore');
+	if (localStorage.getItem('popScore') !== null) {
+		popScore = localStorage.getItem('popScore');
 		popped = true;
 		popScoreDisplay.style.display = 'block';
 		popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
@@ -64,7 +64,7 @@ const bubbleSpawn = () => {
 		popBubble(newBubble)
 		if (popped === false) {
 			popped = true;
-			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will be lost once you close this browser)')
+			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will still be saved even after you exit the browser)')
 			popScoreDisplay.style.display = 'block';
 			popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`			
 		}
@@ -76,7 +76,7 @@ const popBubble = (bubble) => {
 	popScore++;
 	bubble.remove()
 	popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
-	sessionStorage.setItem('popScore', popScore);
+	localStorage.setItem('popScore', popScore);
 }
 
 

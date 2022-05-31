@@ -8,6 +8,9 @@ let popScore = 0;
 let popped = false;
 
 
+
+
+
 window.onscroll = () => {
 	scrollFunction();
 	scrollScore++;
@@ -19,10 +22,11 @@ window.onscroll = () => {
 window.onload = () => {
 	if (localStorage.getItem('popScore') !== null) {
 		popScore = localStorage.getItem('popScore');
-		popped = true;
 		popScoreDisplay.style.display = 'block';
 		popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
 	}
+
+
 	setInterval(() => {
 		bubbleSpawn()
 	}, 10000)
@@ -62,7 +66,7 @@ const bubbleSpawn = () => {
 	newBubble.style.left = `${Math.floor(Math.random() * 100)}vw`;
 	newBubble.addEventListener('click', () => {
 		popBubble(newBubble)
-		if (popped === false) {
+		if (!popped) {
 			popped = true;
 			alert('Keep exploring to pop more bubbles! More bubbles will spawn as you explore the page! (Your progress will still be saved even after you exit the browser)')
 			popScoreDisplay.style.display = 'block';

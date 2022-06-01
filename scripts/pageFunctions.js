@@ -26,6 +26,10 @@ window.onload = () => {
 		popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
 	}
 
+	if (sessionStorage.getItem('sessionPopped') !== null) {
+		popped = true;
+	}
+
 
 	setInterval(() => {
 		bubbleSpawn()
@@ -81,6 +85,7 @@ const popBubble = (bubble) => {
 	bubble.remove()
 	popScoreDisplay.textContent = `Bubbles Popped: ${popScore}`
 	localStorage.setItem('popScore', popScore);
+	sessionStorage.setItem('sessionPopped', true);
 }
 
 

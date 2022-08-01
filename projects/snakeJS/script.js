@@ -27,6 +27,7 @@ const resetSnake = () => {
 	dx = 10;
 	dy = 0;
 	score = 0;
+	scoreDisplay.textContent = `Your score: ${score}`;
 }
 gameStarted = false;
 resetSnake();

@@ -26,7 +26,7 @@ const startGame = () => {
     startTime = new Date();
     makeBubble();
     const gameLoop = setInterval(() => {
-        if (popScore >= 4) {
+        if (popScore >= 29) {
             clearInterval(gameLoop);
         }
         main();

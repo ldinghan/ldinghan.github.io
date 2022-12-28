@@ -78,6 +78,9 @@ section p {
 	align-items: center;
 }
 
+#intro_text:visited {
+	color: white;
+
 #altIntroductionSubtext {
 	display: none;
 }

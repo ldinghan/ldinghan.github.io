@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Self-driving</title>
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <canvas id="networkCanvas"></canvas>
+    <div id="verticalButtons">
+        <button onclick="save()">💾 Save brain</button>
+        <button onclick="discard()">🗑️ Delete brain</button>
+        <button onclick="rerun()">🚘 Run</button>
+        <div>Number of Cars (1-1000):<input type="number" min="1" max="1000" id="carInputValue" placeholder="700"/></div>
+        <div>Mutation (1-100):<input type="number" min="1" max="100" id="mutationInputValue" placeholder="30"/></div>
+    </div>
+    <script src="visualiser.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
